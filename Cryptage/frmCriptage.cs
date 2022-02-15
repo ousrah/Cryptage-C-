@@ -100,5 +100,10 @@ namespace Cryptage
         {
             textBox2.Text = myLib.hash(textBox1.Text);
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            textBox2.Text = myLib.hash2(textBox1.Text);
+        }
     }
 }

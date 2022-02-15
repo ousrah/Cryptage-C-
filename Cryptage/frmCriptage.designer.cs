@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -129,9 +130,9 @@
             this.button7.Location = new System.Drawing.Point(823, 332);
             this.button7.Margin = new System.Windows.Forms.Padding(5);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(131, 57);
+            this.button7.Size = new System.Drawing.Size(171, 57);
             this.button7.TabIndex = 8;
-            this.button7.Text = "Hasher";
+            this.button7.Text = "Hasher512";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
@@ -162,11 +163,23 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Le Hashage";
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(1004, 332);
+            this.button8.Margin = new System.Windows.Forms.Padding(5);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(158, 57);
+            this.button8.TabIndex = 14;
+            this.button8.Text = "Hasher256";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // frmCriptage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1534, 482);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -202,5 +215,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button8;
     }
 }

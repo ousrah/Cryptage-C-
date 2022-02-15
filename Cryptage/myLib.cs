@@ -128,6 +128,17 @@ namespace Cryptage
  
         }
 
+        static public string hash2(string chaine)
+        {
+            byte[] textAsByte = Encoding.Default.GetBytes(chaine);
+
+            SHA256 sha256 = SHA256Cng.Create();
+
+            byte[] hash = sha256.ComputeHash(textAsByte);
+
+            return Convert.ToBase64String(hash);
+
+        }
 
 
     }
