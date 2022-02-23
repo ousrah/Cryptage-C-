@@ -98,12 +98,12 @@ namespace Cryptage
 
         private void button7_Click(object sender, EventArgs e)
         {
-            textBox2.Text = myLib.hash(textBox1.Text);
+            textBox2.Text = myLib.hash512(textBox1.Text);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            textBox2.Text = myLib.hash2(textBox1.Text);
+            textBox2.Text = myLib.hash256(textBox1.Text);
         }
     }
 }

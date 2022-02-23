@@ -61,7 +61,7 @@ namespace Cryptage
             return cryptedTextAsByte;
         }
 
-        static public  string DecryptSym(byte[] cryptedTextAsByte, byte[] key, byte[] iv)
+        static public string DecryptSym(byte[] cryptedTextAsByte, byte[] key, byte[] iv)
         {
             TripleDESCryptoServiceProvider TDES = new TripleDESCryptoServiceProvider();
 
@@ -116,7 +116,7 @@ namespace Cryptage
         }
 
 
-        static public string  hash(string chaine)
+        static public string  hash512(string chaine)
         {
             byte[] textAsByte = Encoding.Default.GetBytes(chaine);
 
@@ -128,7 +128,7 @@ namespace Cryptage
  
         }
 
-        static public string hash2(string chaine)
+        static public string hash256(string chaine)
         {
             byte[] textAsByte = Encoding.Default.GetBytes(chaine);
 
